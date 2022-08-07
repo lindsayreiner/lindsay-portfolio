@@ -1,12 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import '../styles/Home.css'
 
 export default function Home() {
     return (
         <div className="welcomeCont">
-            <h1 className="welcome hvr-float-shadow">Welcome, I'm Lindsay.</h1>
-            <p className="subtitle">I'm a Front End Web Developer out of Raleigh, NC.</p>
-        </div>
+            <NavLink className="welcome hvr-float-shadow" to="/about"> Welcome, I'm Lindsay.</NavLink>
+            <p className="subtitle" >Front End Web Developer | Raleigh, NC</p>
+        </div >
     );
 }

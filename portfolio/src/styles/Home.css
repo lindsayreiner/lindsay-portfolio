@@ -9,8 +9,10 @@
     font-family: 'Inspiration', cursive; 
     font-size: 9rem;
     font-weight: normal;
+    color: inherit;
     margin-top: 10rem;
     margin-bottom: 0;
+    text-decoration: none;
   }
 
   .subtitle {
@@ -62,4 +64,12 @@
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
     /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
+  
+  @media screen and (max-width: 480px) {
+    .welcome {
+    text-align: center;
+    
+    }
   }

@@ -1,7 +1,7 @@
 :root {
   --darkest: #270f21;
   --navbar: #522b47;
-  --navbar-highlight: #f6c043;
+  --navbar-highlight: #f3c968;
   --eggplant: #522b47;
   --magenta: #7b0828;
   --rust: #af3800;
@@ -79,65 +79,4 @@ body > footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #1a2024;
 }
-
-/* --------------------*/
-/* Logo                */
-/* --------------------*/
-
-.initials {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  border: 5px outset rgb(42, 41, 41);
-  margin: 2.5rem;
-  padding: 1rem;
-  color: var(--light);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 65px;
-  height: 50px;
-  line-height: 50px;
-  margin-left: 2rem;
-}
-
-.animation {
-  animation-name: color-flow;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-/* .logo-rotation {
-  animation-name: logo-rotation;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-} */
-
-@keyframes color-flow {
-  0% {
-    background-color: var(--magenta);
-  }
-  20% {
-    background-color: var(--rust);
-  }
-  40% {
-    background-color: var(--mustard);
-  }
-  80% {
-    background-color: var(--sapphire);
-  }
-  100% {
-    background-color: var(--eggplant);
-  }
-}
-
-/* @keyframes logo-rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 

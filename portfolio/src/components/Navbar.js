@@ -9,18 +9,19 @@ export default function Navbar() {
         <>
             <nav className="navbar">
                 <NavLink className="initials animation" to="/">LCR</NavLink>
+                <h1 className="name hidden">Lindsay Reiner</h1>
                 <ul className="navBtnCont">
                     <li className="navBtn">
-                        <NavLink className="navBtnLink hvr-float" to="/about">About</NavLink>
+                        <NavLink className="navBtnLink" to="/about">About</NavLink>
                     </li>
                     <li className="navBtn">
-                        <NavLink className="navBtnLink hvr-float" to="/portfolio">Portfolio</NavLink>
+                        <NavLink className="navBtnLink" to="/portfolio">Portfolio</NavLink>
                     </li>
                     <li className="navBtn">
-                        <NavLink className="navBtnLink hvr-float" to="/contact">Contact</NavLink>
+                        <NavLink className="navBtnLink" to="/contact">Contact</NavLink>
                     </li>
                     <li className="navBtn">
-                        <NavLink className="navBtnLink hvr-float" to="/resume" >Resume</NavLink>
+                        <NavLink className="navBtnLink" to="/resume" >Resume</NavLink>
                     </li>
                 </ul>
             </nav>
