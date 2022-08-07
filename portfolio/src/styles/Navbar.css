@@ -27,7 +27,7 @@
     text-align: center;
     text-decoration: none;
     border: 5px outset rgb(192, 189, 189);
-    margin: 2.5rem;
+    margin: 1.5rem 0 1.5rem 0;
     padding: 1rem 3rem;
     color: var(--light);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -93,21 +93,23 @@
     font-family: 'Inspiration', cursive;
     text-decoration: none;
     list-style: none;
-    color: var(--light);
+    color: var(--navbar-highlight);
     font-size: 4rem;
     letter-spacing: 5px;
     background-image: linear-gradient(270deg, var(--navbar-highlight) 0%, var(--navbar-highlight) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.1em;
     background-position: bottom;
+    border-radius: 8px;
     transition: all 0.25s ease-in;
     padding: 0.2em;
   }
 
   .navBtnLink:hover {
     background-size: 100% 100%;
-    color: var(--darkest);
+    color: var(--navbar);
     font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
 

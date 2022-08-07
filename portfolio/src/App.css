@@ -1,7 +1,7 @@
 :root {
   --darkest: #270f21;
   --navbar: #522b47;
-  --navbar-highlight: #f3c968;
+  --navbar-highlight: rgb(252, 224, 158);
   --eggplant: #522b47;
   --magenta: #7b0828;
   --rust: #af3800;
