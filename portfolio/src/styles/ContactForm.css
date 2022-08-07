@@ -1,0 +1,16 @@
+h1 {
+    font-size: 3rem;
+}
+
+.contactInfoCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+   
+}
+
+.contactFormSendBtn {
+    margin-top: 2rem;
+}
