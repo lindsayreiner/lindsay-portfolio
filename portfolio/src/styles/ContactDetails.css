@@ -1,0 +1,35 @@
+
+.contactHeader {
+   border-bottom: 3px double black;
+padding-bottom: .5em;
+}
+
+.contactDetails {
+    margin: 3rem 5rem;
+    padding: 1em;
+    border: 10px inset var(--mustard);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.contactItems {
+    padding: 18px;
+}
+
+.contact,
+.contactLink {
+    margin-bottom: 1.5em;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+
+.contactLink:hover {
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(133deg, var(--creamsicle) 25.00%, var(--mustard) 75.00%); 
+    font-weight: bold;
+    color: var(--navbar);
+}

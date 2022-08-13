@@ -1,16 +1,18 @@
 :root {
   --darkest: #270f21;
-  --navbar: #623555;
-  --navbar-highlight: rgb(252, 224, 158);
+  --navbar: rgb(82, 74, 74);
+  --navbar-highlight: rgb(248, 208, 114);
   --eggplant: #522b47;
   --magenta: #7b0828;
-  --rust: #af3800;
+  --rust: #c44e18;
+  --creamsicle: #ff8f5c;
   --sapphire: #066699;
   --turquoise: #0d838b;
   --mustard: #ffb400;
   --pale: #93a8ac;
   --pale-pink: #e0b2bf;
   --light: #fffffa;
+  --gray: rgb(82, 74, 74);
 }
 
 /* --------------------*/
@@ -71,12 +73,20 @@ body > footer {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #37444d;
+  background: linear-gradient(132deg, rgb(221, 2, 3) 0.00%, rgb(251, 137, 2) 20.00%, rgb(248, 235, 5) 40.00%, rgb(0, 127, 38) 60.00%, rgb(5, 75, 249) 80.00%, rgb(114, 6, 130) 100.00%);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #1a2024;
+  background: var(--sapphire);
+}
+
+/* --------------------*/
+/* Utility Classes     */
+/* --------------------*/
+
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

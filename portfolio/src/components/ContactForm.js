@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/ContactForm.css';
 
-import { useState } from 'react';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import {
+    Grid,
+    TextField,
+    Button
+} from "@mui/material";
+
 
 import emailjs from 'emailjs-com'
 import { init } from 'emailjs-com';
@@ -19,7 +21,7 @@ export default function ContactForm() {
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
 
-    const submit = () => {
+    const handleSubmit = () => {
         if (name && email && subject && message) {
             const serviceId = 'service_h47nmgo';
             const templateId = 'template_q9hax96';
@@ -46,37 +48,38 @@ export default function ContactForm() {
     }
     return (
         <>
-            <div className="contactInfoCont">
-                <Box
-                    className="contactForm"
-                    component="form"
-                    sx={{
-                        width: 500,
-                        maxWidth: '100%',
-                    }}
-                    noValidate
-                    autoComplete="off"
-                >
-                    <h1>Get In Touch!</h1>
+            <Grid
+                className="contactForm box-shadow"
+                component="form"
+                noValidate
+                autoComplete="off"
+            >
+                <h1>Send me an email</h1>
+                <Grid>
                     <TextField
-                        id="outlined-basic" className="contactFormTextFields"
+                        id="outlined-basic" className="contactFormInput"
                         margin="normal"
                         value={name}
                         onChange={e => setName(e.target.value)}
                         label="Name"
                         variant="outlined"
-                        color="secondary"
+                        color="primary"
                         fullWidth
                         required />
+                </Grid>
+                <Grid>
                     <TextField
                         id="outlined-basic" className="contactFormTextFields"
                         margin="normal"
                         value={email}
-                        onChange={e => setEmail(e.target.value)} label="Email Address"
+                        onChange={e => setEmail(e.target.value)}
+                        label="Email Address"
                         variant="outlined"
-                        color="secondary"
+                        color="primary"
                         fullWidth
                         required />
+                </Grid>
+                <Grid>
                     <TextField
                         id="outlined-basic" className="contactFormTextFields"
                         margin="normal"
@@ -84,33 +87,36 @@ export default function ContactForm() {
                         onChange={e => setSubject(e.target.value)}
                         label="Subject"
                         variant="outlined"
-                        color="secondary"
+                        color="primary"
                         fullWidth
                         required />
+                </Grid>
+                <Grid>
                     <TextField
                         id="outlined-multiline-static"
                         className="contactFormTextFields"
                         margin="normal"
                         value={message}
                         onChange={e => setMessage(e.target.value)}
-                        label="Message"
-                        color="secondary"
+                        label="Create a message here"
+                        color="primary"
                         multiline
                         rows={4}
                         fullWidth
                         required
                     />
+                </Grid>
+                <Grid>
                     <Button
-                        onClick={submit}
+                        onClick={handleSubmit}
                         className="contactFormSendBtn"
                         margin="normal"
                         variant="contained"
-                        color="secondary"
-                        size="large">Send</Button>
-                    <span className={emailSent ? 'visible' : 'hidden'} style={{ "margin- top": "1rem" }}>Thank you for your message, we will be in touch in no time!</span>
-                </Box>
-            </div>
-
+                        color="primary"
+                        size="large">Send Message</Button>
+                    <span className={emailSent ? 'visible' : 'hidden'} style={{ "marginTop": "1rem" }}>Thank you for your message, we will be in touch soon!</span>
+                </Grid>
+            </Grid>
         </>
     )
 }

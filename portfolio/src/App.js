@@ -6,16 +6,17 @@ import {
   Route
 } from "react-router-dom";
 import AOS from "aos";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
 import Resume from './components/Resume';
-import Contact from './components/Contact';
+import Contact from './pages/Contact';
 // import Footer from './components/Footer';
 
-import './App.css';
+import './styles/App.css';
 
 function App() {
 
@@ -24,23 +25,44 @@ function App() {
     AOS.refresh();
   }, []);
 
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#623555"
+      },
+      secondary: {
+        main: "rgb(252, 224, 158)"
+      }
+    },
+    typography: {
+      fontSize: 22,
+      fontWeight: "bold",
+      fontFamily: [
+        'EB Garamond', "serif",
+        'Inspiration', "cursive"
+      ].join(','),
+    }
+  });
+
   return (
     <>
-      <Router>
-        <main>
-          <Navbar />
-          <Routes>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <main>
+            <Navbar />
+            <Routes>
 
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/contact" element={<Contact />} />
 
-          </Routes>
-        </main>
-        {/* <Footer /> */}
-      </Router>
+            </Routes>
+          </main>
+          {/* <Footer /> */}
+        </Router>
+      </ThemeProvider>
     </>
   );
 }
