@@ -1,0 +1,22 @@
+.about-container {
+    text-align: center;
+}
+
+.me{
+    border-radius: 50%;
+    filter: brightness(0.8) contrast(1.9) saturate(1.4) opacity(0.71) sepia(0.26) grayscale(0.72);
+    width: 35rem;
+    height: 40rem;
+    margin: 10em 0 0 30em;
+    shape-outside: ellipse()
+}
+
+.about-text {
+    font-size: 18px;
+    margin: 2em 5em 0 2em;
+}
+
+.larger-margin {
+    margin-top: 8em;
+    
+}
