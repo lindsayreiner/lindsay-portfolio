@@ -55,7 +55,7 @@ export default function About() {
                 />
                 <CardMedia
                     component="img"
-                    // className="me"
+                    className="me"
                     height="195"
                     image={HomeOffice}
                     alt="home office"
