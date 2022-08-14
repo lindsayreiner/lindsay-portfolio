@@ -35,7 +35,7 @@ function App() {
       }
     },
     typography: {
-      fontSize: 22,
+      fontSize: 25,
       fontWeight: "bold",
       fontFamily: [
         'EB Garamond', "serif",
