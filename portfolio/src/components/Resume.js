@@ -11,8 +11,8 @@ export default function Resume() {
     return (
         <section className="resume-container">
             <p className="resume">Download my <a href={resume} download>resume</a></p>
-            <Grid container >
-                <Grid item xl={4} l={4}>
+            <Grid container className="skills-container">
+                <Grid item xl={4} l={4} className="front-end-wrapper">
                     <article className="front-end proficiencies">
                         <h1>Front End</h1>
                         <h2>Languages</h2>
@@ -30,7 +30,7 @@ export default function Resume() {
                         </ul>
                     </article>
                 </Grid>
-                <Grid item xl={4} l={4}>
+                <Grid item xl={4} l={4} className="back-end-wrapper">
                     <article className="back-end proficiencies">
                         <h1>Back End</h1>
                         <h2>Languages</h2>
@@ -60,7 +60,7 @@ export default function Resume() {
                         </div>
                     </article>
                 </Grid>
-                <Grid item xl={4} l={4}>
+                <Grid item xl={4} l={4} className="soft-skills-wrapper">
                     <article className="soft-skills proficiencies">
                         <h1>Soft Skills</h1>
                         <h2>General</h2>

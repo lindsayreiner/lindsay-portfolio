@@ -67,6 +67,21 @@ padding: 0 2em 1em 1.5em;
     background-color: #fdceb8;
 } */
 
+@media screen and (max-width: 1352px) {
+    .skills-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .front-end-wrapper,
+    .back-end-wrapper,
+    .soft-skills-wrapper {
+        min-width: 550px !important;
+    }
+}
+
 @media screen and (max-width: 825px) {
     .resume {
         position: absolute;
@@ -87,5 +102,27 @@ padding: 0 2em 1em 1.5em;
     .wrap {
         flex-direction: column;
     }
+
+    .front-end-wrapper,
+    .back-end-wrapper,
+    .soft-skills-wrapper {
+        min-width: 450px !important;
+    }
 }
+
+@media screen and (max-width:433px) {
+    .front-end-wrapper,
+    .back-end-wrapper,
+    .soft-skills-wrapper {
+        min-width: 350px !important;
+    }
+ }
+
+ @media screen and (max-width:336px) {
+    .front-end-wrapper,
+    .back-end-wrapper,
+    .soft-skills-wrapper {
+        min-width: 250px !important;
+    }
+  }
     

@@ -14,10 +14,10 @@ export default function Contact() {
     return (
         <>
             <Grid container className="contactContainer">
-                <Grid item xl={6} l={6} md={6.5} sm={11} xs={12}>
+                <Grid item xl={6} l={6} md={6} sm={11} xs={12}>
                     <ContactForm />
                 </Grid>
-                <Grid item xl={6} l={6} md={5.5}>
+                <Grid item xl={4} l={4} md={6} >
                     <ContactDetails />
                 </Grid>
             </Grid>

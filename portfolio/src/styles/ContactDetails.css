@@ -14,7 +14,7 @@ padding-bottom: .5em;
 
 .icon-wrapper {
     display: flex;
-    margin-left: 3rem;
+    justify-content: space-around;
 }
 
 .contact,
