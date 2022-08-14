@@ -7,3 +7,9 @@
 .me {
     filter: brightness(0.8) contrast(1.9) saturate(1.4) opacity(0.71) sepia(0.26) grayscale(0.72);
 }
+
+@media screen and (max-width: 865px) {
+    .card-container {
+        margin: 0 5em;
+    }
+}
