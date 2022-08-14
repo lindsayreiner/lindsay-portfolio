@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fa0bfe85.css",
+    "main.js": "/static/js/main.e4acf21c.js",
+    "static/media/home-office.jpg": "/static/media/home-office.93f9cc68cadd250c44a0.jpg",
+    "static/media/wanderlust-reviews.png": "/static/media/wanderlust-reviews.084d02b7b3ec0e3977d5.png",
+    "static/media/astronomical-guidance.png": "/static/media/astronomical-guidance.fee0bc467ab253e71efe.png",
+    "static/media/me.jpg": "/static/media/me.4e38aa5ad0b3f784675f.jpg",
+    "static/media/workday-scheduler.png": "/static/media/workday-scheduler.f061ece7025b060b6e07.png",
+    "static/media/weather-dashboard.png": "/static/media/weather-dashboard.3a3b550dfa9ff39168ac.png",
+    "static/media/order-summary-comp.png": "/static/media/order-summary-comp.1cd26174afcc6346ebbe.png",
+    "static/media/lindsay_reiner_CSresume_8.8.2022.pdf": "/static/media/lindsay_reiner_CSresume_8.8.2022.e7a9a030352e53062315.pdf",
+    "static/media/team-profile-generator.png": "/static/media/team-profile-generator.399fd7d8d2f2bf956293.png",
+    "index.html": "/index.html",
+    "main.fa0bfe85.css.map": "/static/css/main.fa0bfe85.css.map",
+    "main.e4acf21c.js.map": "/static/js/main.e4acf21c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa0bfe85.css",
+    "static/js/main.e4acf21c.js"
+  ]
+}
