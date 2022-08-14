@@ -44,17 +44,18 @@ export default function Resume() {
                         <h2>Platforms, Tools, and Database Programs</h2>
                         <div className="wrap">
                             <ul className="margin">
-                                <li>MySQL</li>
-                                <li>Sequelize</li>
-                                <li>NoSQL</li>
-                                <li>MongoDB</li>
-                            </ul>
-                            <ul>
                                 <li>Git Bash</li>
                                 <li>GitHub</li>
                                 <li>Heroku</li>
                                 <li>Netlify</li>
                                 <li>VS Code</li>
+
+                            </ul>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>Sequelize</li>
+                                <li>NoSQL</li>
+                                <li>MongoDB</li>
                             </ul>
                         </div>
                     </article>
@@ -64,7 +65,7 @@ export default function Resume() {
                         <h1>Soft Skills</h1>
                         <h2>General</h2>
                         <div className="wrap">
-                            <ul className="margin">
+                            <ul>
                                 <li>Teamwork</li>
                                 <li>Work Ethic</li>
                                 <li>Attention to Detail</li>
@@ -80,7 +81,7 @@ export default function Resume() {
                         </div>
                         <h2>Customer Service</h2>
                         <div className="wrap">
-                            <ul className="margin">
+                            <ul>
                                 <li>Listening Skills</li>
                                 <li>Empathy</li>
                                 <li>Self-control</li>
