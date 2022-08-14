@@ -1,9 +1,12 @@
 import React from 'react'
 
+import ProjectCard from '../components/ProjectCard';
+
 export default function Portfolio() {
     return (
         <>
-            <h1>Portfolio</h1>
+
+            <ProjectCard />
         </>
     )
 }

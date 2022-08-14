@@ -21,6 +21,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import EmailIcon from '@mui/icons-material/Email';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Tooltip from '@mui/material/Tooltip';
 
 import { amber, blue, pink, red } from '@mui/material/colors';
 
@@ -67,18 +68,26 @@ export default function About() {
                     </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
-                    <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/in/lindsay-c-reiner-97098a2a/">
-                        <LinkedInIcon sx={{ color: blue[900], width: 40, height: 40 }} />
-                    </IconButton>
-                    <IconButton aria-label="GitHub" href="https://github.com/lindsayreiner">
-                        <GitHubIcon sx={{ color: amber[700], width: 40, height: 40 }} />
-                    </IconButton>
-                    <IconButton aria-label="Email Me" href="mailto:lindsayreiner@hey.com">
-                        <EmailIcon sx={{ color: pink[900], width: 40, height: 40 }} />
-                    </IconButton>
-                    <IconButton aria-label="Resume Download" href={resume} download>
-                        <ArticleIcon sx={{ color: red[900], width: 40, height: 40 }} />
-                    </IconButton>
+                    <Tooltip title="Visit my LinkedIn">
+                        <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/in/lindsay-c-reiner-97098a2a/">
+                            <LinkedInIcon sx={{ color: blue[900], width: 40, height: 40 }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Visit my GitHub">
+                        <IconButton aria-label="GitHub" href="https://github.com/lindsayreiner">
+                            <GitHubIcon sx={{ color: amber[700], width: 40, height: 40 }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Email me directly">
+                        <IconButton aria-label="Email Me" href="mailto:lindsayreiner@hey.com">
+                            <EmailIcon sx={{ color: pink[900], width: 40, height: 40 }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Download my resume">
+                        <IconButton aria-label="Resume Download" href={resume} download>
+                            <ArticleIcon sx={{ color: red[900], width: 40, height: 40 }} />
+                        </IconButton>
+                    </Tooltip>
                     <ExpandMore
                         expand={expanded}
                         onClick={handleExpandClick}
