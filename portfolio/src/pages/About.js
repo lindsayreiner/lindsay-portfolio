@@ -88,13 +88,16 @@ export default function About() {
                             <ArticleIcon sx={{ color: red[900], width: 40, height: 40 }} />
                         </IconButton>
                     </Tooltip>
+
                     <ExpandMore
                         expand={expanded}
                         onClick={handleExpandClick}
                         aria-expanded={expanded}
                         aria-label="show more"
                     >
-                        <ExpandMoreIcon />
+                        <Tooltip title="Show more/less">
+                            <ExpandMoreIcon />
+                        </Tooltip>
                     </ExpandMore>
                 </CardActions>
                 <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -104,8 +107,6 @@ export default function About() {
                             with newly developed skills in JavaScript, CSS, and HTML. I’m passionate
                             about developing apps that are beautiful, useful, and intuitive.
                         </Typography>
-
-
                         <Typography paragraph>
                             My extensive experience in the world of customer service brings
                             unique value to the UI/UX design, and deployment of engaging web
@@ -120,6 +121,6 @@ export default function About() {
                     </CardContent>
                 </Collapse>
             </Card>
-        </section>
+        </section >
     )
 }
