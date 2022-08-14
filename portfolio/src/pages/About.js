@@ -2,6 +2,7 @@ import React from 'react'
 
 import me from '../images/me.jpg';
 import HomeOffice from '../images/home-office.jpg';
+import resume from '../images/lindsay_reiner_CSresume_8.8.2022.pdf';
 import '../styles/About.css';
 
 
@@ -16,11 +17,12 @@ import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ArticleIcon from '@mui/icons-material/Article';
 import EmailIcon from '@mui/icons-material/Email';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import { amber, blue, pink } from '@mui/material/colors';
+import { amber, blue, pink, red } from '@mui/material/colors';
 
 
 const ExpandMore = styled((props) => {
@@ -42,10 +44,10 @@ export default function About() {
     };
     return (
         <section className="about-container">
-            <Card sx={{ maxWidth: 445 }} className="card-container box-shadow">
+            <Card sx={{ maxWidth: 900 }} className="card-container box-shadow">
                 <CardHeader
                     avatar={
-                        <Avatar sx={{ width: 80, height: 80 }} aria-label="initials" src={me}>
+                        <Avatar sx={{ width: 100, height: 100 }} aria-label="Lindsay Reiner" src={me}>
                         </Avatar>
                     }
                     title="Front End Web Developer"
@@ -53,7 +55,7 @@ export default function About() {
                 />
                 <CardMedia
                     component="img"
-                    className="me"
+                    // className="me"
                     height="195"
                     image={HomeOffice}
                     alt="home office"
@@ -66,13 +68,16 @@ export default function About() {
                 </CardContent>
                 <CardActions disableSpacing>
                     <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/in/lindsay-c-reiner-97098a2a/">
-                        <LinkedInIcon sx={{ color: blue[900] }} />
+                        <LinkedInIcon sx={{ color: blue[900], width: 40, height: 40 }} />
                     </IconButton>
                     <IconButton aria-label="GitHub" href="https://github.com/lindsayreiner">
-                        <GitHubIcon sx={{ color: amber[700] }} />
+                        <GitHubIcon sx={{ color: amber[700], width: 40, height: 40 }} />
                     </IconButton>
                     <IconButton aria-label="Email Me" href="mailto:lindsayreiner@hey.com">
-                        <EmailIcon sx={{ color: pink[900] }} />
+                        <EmailIcon sx={{ color: pink[900], width: 40, height: 40 }} />
+                    </IconButton>
+                    <IconButton aria-label="Resume Download" href={resume} download>
+                        <ArticleIcon sx={{ color: red[900], width: 40, height: 40 }} />
                     </IconButton>
                     <ExpandMore
                         expand={expanded}

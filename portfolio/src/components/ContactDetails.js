@@ -3,7 +3,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
-import DownloadIcon from '@mui/icons-material/Download';
+import ArticleIcon from '@mui/icons-material/Article';
 import { amber, blue, red } from '@mui/material/colors';
 
 import '../styles/ContactDetails.css';
@@ -26,7 +26,7 @@ export default function ContactDetails() {
                         <GitHubIcon sx={{ color: amber[700], width: 50, height: 50 }} />
                     </IconButton>
                     <IconButton aria-label="Resume Download" href={resume} download>
-                        <DownloadIcon sx={{ color: red[900], width: 50, height: 50 }} />
+                        <ArticleIcon sx={{ color: red[900], width: 50, height: 50 }} />
                     </IconButton>
                 </Box>
 
