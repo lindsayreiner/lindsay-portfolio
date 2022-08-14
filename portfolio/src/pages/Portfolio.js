@@ -68,7 +68,7 @@ const projects = [
 export default function Portfolio() {
     return (
         <>
-            <section className="projects-container">
+            <section className="projects-container" data-aos="fade-up">
                 {projects.map(({ imageLink, title, description, role, technologies, websiteLink, gitLink }, index) => {
                     return (
                         <ProjectCard key={index} imageLink={imageLink} title={title} description={description} role={role} technologies={technologies} websiteLink={websiteLink} gitLink={gitLink} />

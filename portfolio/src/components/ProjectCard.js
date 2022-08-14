@@ -19,11 +19,15 @@ import Tooltip from '@mui/material/Tooltip';
 export default function ProjectCard({ imageLink, title, description, role, technologies, websiteLink, gitLink }) {
     return (
         <>
-            <Card sx={{ maxWidth: 345 }} className="projectCard">
+            <Card sx={{ maxWidth: 345 }} className="projectCard" data-aos="fade-up">
                 <CardHeader
                     title={title}
+                    className="cardHeader"
+                />
+                <CardHeader
                     subheader={role}
                 />
+
                 <IconButton sx={{ width: "100%", padding: 0 }} href={websiteLink} target="_blank">
                     <CardMedia
                         component="img"
@@ -41,7 +45,7 @@ export default function ProjectCard({ imageLink, title, description, role, techn
                         <b>Description:</b> {description}
                     </Typography>
                 </CardContent>
-                <CardActions disableSpacing>
+                <CardActions disableSpacing className="card-icon-container">
                     <Tooltip title="Visit Repository">
                         <IconButton aria-label="GitHub Repo" href={gitLink} target="_blank">
                             <GitHubIcon sx={{ color: amber[600], width: 35, height: 35 }} />
