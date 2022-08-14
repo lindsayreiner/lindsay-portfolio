@@ -54,7 +54,7 @@ export default function ContactForm() {
                 noValidate
                 autoComplete="off"
             >
-                <h1>Send me an email</h1>
+                <h1 className="formHeader">Send me an email</h1>
                 <Grid>
                     <TextField
                         id="outlined-basic" className="contactFormInput"

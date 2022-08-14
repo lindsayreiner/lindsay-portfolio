@@ -3,6 +3,11 @@ h1 {
     text-align: center;
 }
 
+.formHeader {
+    border-bottom: 3px double black;
+    padding-bottom: .5em;
+}
+
 
 .contactForm {
     background-color: #f2f2f2;
