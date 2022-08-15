@@ -46,6 +46,7 @@ export default function About() {
     return (
         <section className="about-container">
             <Card sx={{ maxWidth: 900 }} className="card-container box-shadow">
+                <CardHeader title="Lindsay C Reiner" className="about-name" />
                 <CardHeader
                     avatar={
                         <Avatar sx={{ width: 100, height: 100 }} aria-label="Lindsay Reiner" src={me}>

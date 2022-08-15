@@ -7,7 +7,9 @@ import '../styles/Navbar.css'
 export default function Navbar() {
     return (
         <>
-            <nav className="navbar">
+            <nav className="navbar hamnav">
+                <label for="hamburger" className="hidden">&#9776;</label>
+                <input type="checkbox" id="hamburger" className="hidden" />
                 <NavLink className="initials animation" to="/">LCR</NavLink>
                 <h1 className="name hidden">Lindsay Reiner</h1>
                 <ul className="navBtnCont">
