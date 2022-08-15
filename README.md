@@ -3,22 +3,14 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
   <img src="https://img.shields.io/badge/node-%3E%3D9.3.0-blue.svg" />
-  <a href="https://github.com/kefranabg/readme-md-generator#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
   <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/lindsayreiner/Lindsay's Portfolio" />
-  </a>
 </p>
 
-> My professional portfolio using React
+> My professional portfolio using React. Deployment via Netlify; NOT deployed via GitHub Pages. View my portfolio at the link below.
 
-### 🏠 [Homepage](https://github.com/kefranabg/readme-md-generator#readme)
-
-### ✨ [Demo](www.lindsayreiner.com)
+### ✨ [View My Portfolio](www.lindsayreiner.com)
 
 ## Prerequisites
 
@@ -37,12 +29,6 @@ npm install
 npm run start
 ```
 
-## Run tests
-
-```sh
-npm run test
-```
-
 ## Author
 
 👤 **Lindsay Reiner**
@@ -50,14 +36,6 @@ npm run test
 * Website: www.lindsayreiner.com
 * Github: [@lindsayreiner](https://github.com/lindsayreiner)
 * LinkedIn: [@lindsay-c-reiner-97098a2a](https://linkedin.com/in/lindsay-c-reiner-97098a2a)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/kefranabg/readme-md-generator/issues). You can also take a look at the [contributing guide](https://github.com/kefranabg/readme-md-generator/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
