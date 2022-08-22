@@ -79,7 +79,7 @@ export default function About() {
                             <GitHubIcon sx={{ color: amber[700], width: 40, height: 40 }} />
                         </IconButton>
                     </Tooltip>
-                    <Tooltip title="Email me directly">
+                    <Tooltip title="Email me">
                         <IconButton aria-label="Email Me" href="mailto:lindsayreiner@hey.com">
                             <EmailIcon sx={{ color: pink[900], width: 40, height: 40 }} />
                         </IconButton>
